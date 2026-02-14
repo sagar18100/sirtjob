@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Preparation | PrepPortal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .section-header {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 4rem 0 2rem;
+        }
+
+        .topic-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topic-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-area {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .tab-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="preparation.html">Preparation</a>
+                <a href="dsa.html">DSA Sheet</a>
+                <a href="companies.html">Company Info</a>
+            </div>
+            <a href="jobs.html" class="btn btn-primary">Login</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-top: 8rem;">
+        <div class="container">
+            <h1>Comprehensive Preparation</h1>
+            <p>From Aptitude to HR Rounds, we cover every aspect of the placement season.</p>
+            <div class="tabs">
+                <div class="tab-btn active" onclick="showSection('aptitude')">Aptitude</div>
+                <div class="tab-btn" onclick="showSection('technical')">Technical Core</div>
+                <div class="tab-btn" onclick="showSection('hr')">HR Interview</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Aptitude Section -->
+        <section id="aptitude" class="prep-section">
+            <h2 class="section-header">Quantitative & Logical Aptitude</h2>
+            <div class="grid grid-2">
+                <div class="card glass">
+                    <h3>Quantitative Aptitude</h3>
+                    <ul class="topic-list">
+                        <li class="topic-item">Percentages & Profit/Loss <i data-lucide="check-circle"
+                                style="color: var(--secondary)"></i></li>
+                        <li class="topic-item">Time, Speed & Distance <i data-lucide="circle"></i></li>
+                        <li class="topic-item">Permutation & Combination <i data-lucide="circle"></i></li>
+                        <li class="topic-item">Probability <i data-lucide="circle"></i></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 1rem; width: 100%; justify-content: center;">Practice Sets</a>
+                </div>
+                <div class="card glass">
+                    <h3>Logical Reasoning</h3>
+                    <ul class="topic-list">
+                        <li class="topic-item">Syllogisms <i data-lucide="check-circle"
+                                style="color: var(--secondary)"></i></li>
+                        <li class="topic-item">Blood Relations <i data-lucide="circle"></i></li>
+                        <li class="topic-item">Seating Arrangement <i data-lucide="circle"></i></li>
+                        <li class="topic-item">Data Sufficiency <i data-lucide="circle"></i></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 1rem; width: 100%; justify-content: center;">Practice Sets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Section -->
+        <section id="technical" class="prep-section" style="display: none;">
+            <h2 class="section-header">Technical Core Subjects</h2>
+            <div class="grid grid-3">
+                <div class="card glass">
+                    <div class="card-icon"><i data-lucide="database"></i></div>
+                    <h3>DBMS</h3>
+                    <p>Normalization, SQL Queries, Joins, Indexing and ACID properties.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">View Notes</a>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon"><i data-lucide="cpu"></i></div>
+                    <h3>Operating Systems</h3>
+                    <p>Deadlocks, Paging, Scheduling algorithms and Semaphores.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">View Notes</a>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon"><i data-lucide="network"></i></div>
+                    <h3>Comp. Networks</h3>
+                    <p>OSI Model, TCP/IP, HTTP/HTTPS, DNS and Socket programming.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">View Notes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HR Section -->
+        <section id="hr" class="prep-section" style="display: none;">
+            <h2 class="section-header">HR Interview Preparation</h2>
+            <div class="content-area glass">
+                <h3>Most Common Questions</h3>
+                <div class="topic-item">
+                    <div>
+                        <strong>Tell me about yourself?</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">The pitch that sets the tone for the
+                            interview.</p>
+                    </div>
+                </div>
+                <div class="topic-item">
+                    <div>
+                        <strong>Why do you want to join our company?</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Show your research about the
+                            organization.</p>
+                    </div>
+                </div>
+                <div class="topic-item">
+                    <div>
+                        <strong>What are your strengths and weaknesses?</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Be honest but frame it positively.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary" style="margin-top: 2rem;">Download Full Guide</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PrepPortal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.prep-section').forEach(s => s.style.display = 'none');
+            // Show target section
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Update tabs
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Handle URL hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && document.getElementById(hash)) {
+                showSection(hash);
+            }
+        });
+    </script>
+</body>
+
+</html>

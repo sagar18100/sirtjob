@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Tracker | PrepPortal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .progress-bar-container {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            width: 35%;
+            /* Hardcoded for demo */
+        }
+
+        .difficulty-filter {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="preparation.html">Preparation</a>
+                <a href="dsa.html">DSA Sheet</a>
+                <a href="companies.html">Company Info</a>
+            </div>
+            <a href="jobs.html" class="btn btn-primary">Save Progress</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-top: 8rem; text-align: left;">
+        <div class="container">
+            <h1>Master Data Structures & Algorithms</h1>
+            <p>Topic-wise curated list of 400+ questions from LeetCode, GFG, and InterviewBit.</p>
+            <div class="progress-bar-container">
+                <div class="progress-fill"></div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Current Progress: 140 / 400 Solved (35%)</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="difficulty-filter">
+            <button class="tab-btn active">All Topics</button>
+            <button class="tab-btn">Arrays</button>
+            <button class="tab-btn">Strings</button>
+            <button class="tab-btn">Graphs</button>
+            <button class="tab-btn">DP</button>
+        </div>
+
+        <div class="glass" style="overflow-x: auto; padding: 1rem;">
+            <table class="dsa-sheet">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">Status</th>
+                        <th>Problem</th>
+                        <th>Difficulty</th>
+                        <th>Links</th>
+                        <th>Topic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Two Sum</td>
+                        <td><span class="tag tag-easy">Easy</span></td>
+                        <td><a href="#" style="color: var(--primary);"><i data-lucide="external-link"></i></a></td>
+                        <td>Arrays</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Best Time to Buy and Sell Stock</td>
+                        <td><span class="tag tag-easy">Easy</span></td>
+                        <td><a href="#" style="color: var(--primary);"><i data-lucide="external-link"></i></a></td>
+                        <td>Arrays</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Longest Substring Without Repeating Characters</td>
+                        <td><span class="tag tag-medium">Medium</span></td>
+                        <td><a href="#" style="color: var(--primary);"><i data-lucide="external-link"></i></a></td>
+                        <td>Strings</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Merge Intervals</td>
+                        <td><span class="tag tag-medium">Medium</span></td>
+                        <td><a href="#" style="color: var(--primary);"><i data-lucide="external-link"></i></a></td>
+                        <td>Arrays</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Reverse Nodes in k-Group</td>
+                        <td><span class="tag tag-hard">Hard</span></td>
+                        <td><a href="#" style="color: var(--primary);"><i data-lucide="external-link"></i></a></td>
+                        <td>Linked List</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid grid-3" style="margin-top: 4rem;">
+            <div class="card glass">
+                <h3>Arrays & Hashing</h3>
+                <p>25 Questions</p>
+                <div class="progress-bar-container" style="height: 6px; margin: 1rem 0;">
+                    <div class="progress-fill" style="width: 80%;"></div>
+                </div>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content: center;">Continue</a>
+            </div>
+            <div class="card glass">
+                <h3>Dynamic Programming</h3>
+                <p>40 Questions</p>
+                <div class="progress-bar-container" style="height: 6px; margin: 1rem 0;">
+                    <div class="progress-fill" style="width: 10%;"></div>
+                </div>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content: center;">Start Now</a>
+            </div>
+            <div class="card glass">
+                <h3>Graph Algorithms</h3>
+                <p>35 Questions</p>
+                <div class="progress-bar-container" style="height: 6px; margin: 1rem 0;">
+                    <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <a href="#" class="btn btn-outline" style="width: 100%; justify-content: center;">Locked</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PrepPortal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

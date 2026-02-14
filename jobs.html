@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal | PrepPortal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .filter-bar {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .search-input {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            width: 400px;
+        }
+
+        .job-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .job-info h3 {
+            margin: 0;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="preparation.html">Preparation</a>
+                <a href="dsa.html">DSA Sheet</a>
+                <a href="companies.html">Company Info</a>
+            </div>
+            <a href="jobs.html" class="btn btn-primary">Login</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding-top: 8rem;">
+        <div class="container">
+            <h1>Featured Job Openings</h1>
+            <p>Explore opportunities matching your skill set and career goals.</p>
+            <div class="filter-bar">
+                <input type="text" class="search-input" placeholder="Search by role, company, or skills...">
+                <button class="btn btn-primary">Search <i data-lucide="search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 4rem;">
+        <div id="job-list">
+            <!-- Job 1 -->
+            <div class="job-card glass">
+                <div class="job-info">
+                    <h3>Software Engineer - Frontend</h3>
+                    <div class="job-meta">
+                        <span><i data-lucide="building"></i> TechSpark Inc.</span>
+                        <span><i data-lucide="map-pin"></i> Bangalore (Remote)</span>
+                        <span><i data-lucide="dollar-sign"></i> 15 - 25 LPA</span>
+                        <span class="tag tag-easy">New</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Apply Now</a>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card glass">
+                <div class="job-info">
+                    <h3>Backend Developer (Golang)</h3>
+                    <div class="job-meta">
+                        <span><i data-lucide="building"></i> DataFlow Systems</span>
+                        <span><i data-lucide="map-pin"></i> Hyderabad</span>
+                        <span><i data-lucide="dollar-sign"></i> 18 - 30 LPA</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Apply Now</a>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card glass">
+                <div class="job-info">
+                    <h3>Full Stack Developer Intern</h3>
+                    <div class="job-meta">
+                        <span><i data-lucide="building"></i> InnovateAI</span>
+                        <span><i data-lucide="map-pin"></i> Mumbai</span>
+                        <span><i data-lucide="dollar-sign"></i> 40k / month</span>
+                        <span class="tag tag-medium">Internship</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Apply Now</a>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="job-card glass">
+                <div class="job-info">
+                    <h3>SDE-1 (Generalist)</h3>
+                    <div class="job-meta">
+                        <span><i data-lucide="building"></i> Global Pay</span>
+                        <span><i data-lucide="map-pin"></i> Delhi NCR</span>
+                        <span><i data-lucide="dollar-sign"></i> 12 - 18 LPA</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Apply Now</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PrepPortal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

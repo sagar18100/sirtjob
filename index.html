@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepPortal | Job Portal & Interview Preparation</title>
+    <meta name="description" content="Ultimate destination for job listings, DSA sheets, Aptitude, and Interview preparation for top tech companies.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="preparation.html">Preparation</a>
+                <a href="dsa.html">DSA Sheet</a>
+                <a href="companies.html">Company Info</a>
+            </div>
+            <a href="jobs.html" class="btn btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container" id="hero-content">
+            <h1>Unlock Your Career Potential</h1>
+            <p>Comprehensive job listings and specialized preparation modules for DSA, Aptitude, Core Subjects, and HR Interviews - all in one place.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="jobs.html" class="btn btn-primary">Find Jobs <i data-lucide="briefcase"></i></a>
+                <a href="preparation.html" class="btn btn-outline">Start Preparation <i data-lucide="book-open"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 style="text-align: center; font-size: 2.5rem; margin: 4rem 0 1rem;">Everything you need to get hired</h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">From first step to the final offer letter.</p>
+        
+        <div class="grid grid-3">
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="search"></i></div>
+                <h3>Job Portal</h3>
+                <p>Curated job listings from top tech giants and rising startups. Filter by role, location and experience.</p>
+                <a href="jobs.html" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">Explore Jobs →</a>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="code-2"></i></div>
+                <h3>DSA Preparation</h3>
+                <p>Topic-wise DSA sheets covering 400+ most important interview questions. Pattern-based learning.</p>
+                <a href="dsa.html" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">Start Solving →</a>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="building-2"></i></div>
+                <h3>Company Insights</h3>
+                <p>Detailed hiring processes, exam patterns, and syllabus for 50+ top companies like Amazon, Google, and TCS.</p>
+                <a href="companies.html" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">View Processes →</a>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="brain-circuit"></i></div>
+                <h3>Aptitude & Logical</h3>
+                <p>Master quantitative and logical reasoning with our extensive practice problems and mock tests.</p>
+                <a href="preparation.html#aptitude" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">Practice Now →</a>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="file-text"></i></div>
+                <h3>Technical & HR</h3>
+                <p>Comprehensive notes on OS, DBMS, Networking, and frequently asked HR interview questions.</p>
+                <a href="preparation.html#technical" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">Read Notes →</a>
+            </div>
+            <div class="card glass">
+                <div class="card-icon"><i data-lucide="video"></i></div>
+                <h3>Mock Interviews</h3>
+                <p>Practice with real-world scenarios and get feedback to improve your performance.</p>
+                <a href="#" style="color: var(--primary); text-decoration: none; margin-top: 1rem; display: block;">Book Session →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 0;">
+        <div class="glass" style="padding: 4rem; text-align: center; background: linear-gradient(to right, rgba(99, 102, 241, 0.1), rgba(16, 185, 129, 0.1));">
+            <h2>Ready to Land Your Dream Job?</h2>
+            <p style="margin: 1.5rem 0 2rem;">Join 10,000+ students already preparing with PrepPortal.</p>
+            <a href="jobs.html" class="btn btn-primary btn-large">Create Free Account</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PrepPortal. All rights reserved.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

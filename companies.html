@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Insights | PrepPortal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #0f172a;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            z-index: 2;
+        }
+
+        .step::after {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 32px;
+            bottom: -32px;
+            width: 2px;
+            background: var(--glass-border);
+            z-index: 1;
+        }
+
+        .step:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="preparation.html">Preparation</a>
+                <a href="dsa.html">DSA Sheet</a>
+                <a href="companies.html">Company Info</a>
+            </div>
+            <a href="jobs.html" class="btn btn-primary">Join Community</a>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 8rem;">
+        <h1>Company Hiring Processes</h1>
+        <p style="color: var(--text-muted); margin-bottom: 3rem;">In-depth guides on how to crack the top tech
+            companies.</p>
+
+        <div class="grid grid-2">
+            <!-- Google -->
+            <div class="card glass">
+                <div class="company-logo" style="background: #fff; color: #4285F4;">G</div>
+                <h2>Google</h2>
+                <div style="margin-top: 2rem;">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Online Assessment</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">2 Coding questions (Medium-Hard)
+                                focused on Graphs and DP.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Technical Interviews (3-4 Rounds)</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">In-depth DSA, System Design (for
+                                L4+), and Googlyness.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Hiring Committee Review</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Holistic review of all interview
+                                feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: 1.5rem;">View Full Syllabus</a>
+            </div>
+
+            <!-- Amazon -->
+            <div class="card glass">
+                <div class="company-logo" style="background: #131921; color: #FF9900;">a</div>
+                <h2>Amazon</h2>
+                <div style="margin-top: 2rem;">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>OA & Leadership Principles</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Coding + Work Simulation +
+                                Math/Aptitude.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Technical Rounds</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">DSA + LP questions (Very important
+                                for Amazon).</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Bar Raiser Round</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Final check on technical and
+                                cultural fit.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: 1.5rem;">View Full Syllabus</a>
+            </div>
+
+            <!-- TCS -->
+            <div class="card glass">
+                <div class="company-logo" style="background: #000; color: #fff;">TCS</div>
+                <h2>TCS Ninja/Digital</h2>
+                <div style="margin-top: 2rem;">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>NQT (National Qualifier Test)</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Aptitude, Verbal, Logical and Coding
+                                Foundation.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Technical Interview</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Basic C/C++, Java, DBMS and Project
+                                oriented questions.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>HR Interview</strong>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Basic personality check and document
+                                verification.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline"
+                    style="width: 100%; justify-content: center; margin-top: 1.5rem;">View Eligibility</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PrepPortal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
